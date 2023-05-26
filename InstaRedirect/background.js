@@ -13,7 +13,7 @@ chrome.webNavigation.onBeforeNavigate.addListener(function(details) {
                 }
 
                 var prefixRegex = /^(?:https?:\/\/)?(?:www\.)?/i;
-                var cleanedUrl = url.replace(prefixRegex, "");
+                var cleanedUrl = url.replace(prefixRegex, "").replace(/\/\?hl=[a-zA-Z]+$/, "").replace(/\/$/, "");
 
                 var newUrl = cleanedUrl.replace("instagram.com", redirectUrl);
                 chrome.tabs.update(details.tabId, {
