@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   detectTheme();
 
+    var githubLink = document.getElementById('githubLink');
+
+    githubLink.addEventListener('click', function() {
+      chrome.tabs.create({ url: githubLink.href });
+    });
+
     var disabledButton = document.getElementById("disabled");
     disabledButton.innerText = chrome.i18n.getMessage("disabled_text");
 
