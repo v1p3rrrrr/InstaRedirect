@@ -1,0 +1,41 @@
+body {
+    font-size: 16px;
+    min-width: 200px;
+}
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #1cd8d2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+.light-theme {
+    background-color: #fff;
+}
+.light-theme button{
+    background-color: #fff;
+    color:rgba(0, 0, 0);
+}
+.light-theme .selected {
+    background-color: #79159b;
+    color: #fff;
+}
+.dark-theme{
+    background-color: rgba(68,70,84);
+}
+.dark-theme button{
+    background-color: rgba(0, 0, 0);
+    color:hsla(0,0%,100%,.5)
+}
+.dark-theme .selected {
+    background-color: #400a51;
+    color: #fff;
+}

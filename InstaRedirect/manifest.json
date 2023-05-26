@@ -4,6 +4,7 @@
     "description": "Automatically redirects Instagram links to picuki.com and dumpor.com",
     "version": "1.0",
     "permissions": ["webNavigation", "storage", "tabs"],
+    "default_locale": "en",
     "icons": {
       "16": "images/icon-16.png",
       "32": "images/icon-32.png",
@@ -16,5 +17,5 @@
     "background": {
       "service_worker": "background.js"
     }
-  }
+}
   

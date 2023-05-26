@@ -1,7 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
+  var rootElement = document.querySelector('body');
+  function detectTheme() {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        rootElement.classList.add('dark-theme');
+    } else {
+        rootElement.classList.add('light-theme');
+    }
+  }
+
+  detectTheme();
+
     var disabledButton = document.getElementById("disabled");
+    disabledButton.innerText = chrome.i18n.getMessage("disabled_text");
+
     var redirectDumporButton = document.getElementById("redirectDumpor");
+    redirectDumporButton.innerText = chrome.i18n.getMessage("redirect_text") + " dumpor.com";
+
     var redirectPicukiButton = document.getElementById("redirectPicuki");
+    redirectPicukiButton.innerText = chrome.i18n.getMessage("redirect_text") + " picuki.com";
   
     disabledButton.addEventListener("click", function() {
       setActiveOption(null);
