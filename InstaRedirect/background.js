@@ -16,10 +16,9 @@ chrome.webNavigation.onBeforeNavigate.addListener(function(details) {
                 var cleanedUrl = url.replace(prefixRegex, "");
 
                 var newUrl = cleanedUrl.replace("instagram.com", redirectUrl);
-                console.log (newUrl);
-                /*chrome.tabs.update(details.tabId, {
+                chrome.tabs.update(details.tabId, {
                     url: newUrl
-                });*/
+                });
             }
         }
     });
