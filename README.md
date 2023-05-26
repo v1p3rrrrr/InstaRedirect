@@ -1,4 +1,4 @@
-InstaRedirect is a Google Chrome extension that allows you to redirect links from Instagram to other platforms or services. It provides a convenient way to customize the redirection destination when navigating from Instagram to external websites.
+InstaRedirect is a Google Chrome extension that allows you to redirect links from Instagram to other platforms or services.
 
 Features:
 
