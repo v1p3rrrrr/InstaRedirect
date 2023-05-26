@@ -12,4 +12,4 @@ Installation Guide:
 3. Open Google Chrome browser, in the address bar, enter "chrome://extensions" and press "Enter", inthe top right corner, enable the "Developer Mode".
 4. Drag and drop the folder "InstaRedirect" from the ZIP archive into the Extensions page of Google Chrome.
 
-![image](https://github.com/v1p3rrrrr/InstaRedirect/assets/45924304/9d6229bb-c996-404e-b698-3dd7b9835142)
+![image](https://github.com/v1p3rrrrr/InstaRedirect/assets/45924304/2aad3129-f8bb-486b-ab74-ee2157d28c73)
