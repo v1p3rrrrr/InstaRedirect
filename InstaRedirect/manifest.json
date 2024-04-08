@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "InstaRedirect",
     "description": "Automatically redirects Instagram links to picuki.com and dumpor.com",
-    "version": "1.1",
+    "version": "1.5",
     "permissions": ["webNavigation", "storage", "tabs"],
     "default_locale": "en",
     "icons": {
