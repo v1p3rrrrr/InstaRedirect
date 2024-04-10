@@ -2,8 +2,7 @@ InstaRedirect is a Google Chrome extension that allows you to redirect links fro
 
 Features:
 
-Redirect Instagram links to dumpor.com: View profiles, browse content, and explore Instagram without the need to log in.
-Redirect Instagram links to picuki.com: Access Instagram profiles anonymously and explore their content without logging in.
+Redirect Instagram links to dumpor.com, imginn.com, influzoom.com, picuki.com. Access Instagram profiles anonymously and explore their content without logging in.
 
 Installation Guide:
 
