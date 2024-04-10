@@ -11,7 +11,7 @@ chrome.webNavigation.onBeforeNavigate.addListener(function(details) {
     chrome.storage.sync.get("redirectOption", function(data) {
         var redirectOption = data.redirectOption;
         var url = details.url;
-        if (url.includes("instagram.com")) {
+        if (url.includes("instagram.com") && details.frameType === "outermost_frame") {
             if (redirectOption !== null) {
                 var redirectUrl = "";
                 if (redirectOption === "dumpor") {
