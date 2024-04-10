@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var redirectInfluzoomButton = document.getElementById("redirectInfluzoom");
   redirectInfluzoomButton.innerText = chrome.i18n.getMessage("redirect_text") + " influzoom.com";
 
+  var redirectImginnButton = document.getElementById("redirectImginn");
+  redirectImginnButton.innerText = chrome.i18n.getMessage("redirect_text") + " imginn.com";
+
   chrome.storage.sync.get("redirectOption", function(data) {
     var redirectOption = data.redirectOption;
     if (!redirectOption) {
@@ -57,6 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
     redirectInfluzoomButton.addEventListener("click", function() {
         setActiveOption("influzoom");
     });
+
+    redirectImginnButton.addEventListener("click", function() {
+        setActiveOption("imginn");
+    });
+
+    
 });
 
 function setActiveOption(option) {
@@ -76,6 +85,7 @@ function setActiveOption(option) {
       redirectDumporButton.classList.remove("selected");
       redirectPicukiButton.classList.remove("selected");
       redirectInfluzoomButton.classList.remove("selected");
+      redirectImginnButton.classList.remove("selected");
 
       if (redirectOption === null) {
           disabledButton.classList.add("selected");
@@ -85,6 +95,8 @@ function setActiveOption(option) {
           redirectPicukiButton.classList.add("selected");
       } else if (redirectOption === "influzoom") {
         redirectInfluzoomButton.classList.add("selected");
+      } else if (redirectOption === "imginn") {
+        redirectImginnButton.classList.add("selected");
       }
       
   }
