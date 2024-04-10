@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var redirectPicukiButton = document.getElementById("redirectPicuki");
   redirectPicukiButton.innerText = chrome.i18n.getMessage("redirect_text") + " picuki.com";
 
+  var redirectInfluzoomButton = document.getElementById("redirectInfluzoom");
+  redirectInfluzoomButton.innerText = chrome.i18n.getMessage("redirect_text") + " influzoom.com";
+
   chrome.storage.sync.get("redirectOption", function(data) {
     var redirectOption = data.redirectOption;
     if (!redirectOption) {
@@ -50,6 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
     redirectPicukiButton.addEventListener("click", function() {
         setActiveOption("picuki");
     });
+
+    redirectInfluzoomButton.addEventListener("click", function() {
+        setActiveOption("influzoom");
+    });
 });
 
 function setActiveOption(option) {
@@ -68,6 +75,7 @@ function setActiveOption(option) {
       disabledButton.classList.remove("selected");
       redirectDumporButton.classList.remove("selected");
       redirectPicukiButton.classList.remove("selected");
+      redirectInfluzoomButton.classList.remove("selected");
 
       if (redirectOption === null) {
           disabledButton.classList.add("selected");
@@ -75,6 +83,9 @@ function setActiveOption(option) {
           redirectDumporButton.classList.add("selected");
       } else if (redirectOption === "picuki") {
           redirectPicukiButton.classList.add("selected");
+      } else if (redirectOption === "influzoom") {
+        redirectInfluzoomButton.classList.add("selected");
       }
+      
   }
 });

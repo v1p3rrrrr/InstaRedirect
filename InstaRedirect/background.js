@@ -18,6 +18,8 @@ chrome.webNavigation.onBeforeNavigate.addListener(function(details) {
                     redirectUrl = "https://dumpor.com/v";
                 } else if (redirectOption === "picuki") {
                     redirectUrl = "https://picuki.com/profile";
+                } else if (redirectOption === "influzoom") {
+                    redirectUrl = "https://influzoom.com/ig";
                 }
                 var profileRegex = /instagram\.com\/[^\/?&]+/i;
                 var match = profileRegex.exec(url);
